@@ -24,7 +24,7 @@
     ></script>
 
     <!-- 커스텀 css, js -->
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="user-order.css" />
   </head>
   <body>
     <!-- 헤더 -->
@@ -54,58 +54,66 @@
             <li><a href="/login">로그인</a></li>
             <li><a href="/register">회원가입</a></li>
             <li><a href="/admin-product">관리자</a></li>
-            <li><a href="/mypage">마이페이지</a></li>
             <li>
-              <a href="/cart" aria-current="page">
+              <a href="#cart" aria-current="page">
                 <span class="icon">
                   <i class="fas fa-cart-shopping"></i>
                 </span>
                 <span>카트</span>
               </a>
             </li>
-          </ul>
+        </ul>
+    </div>
+</div>
+</nav>
+    <div class="container">
+        <h2>주문목록</h2>
+        <ul class="List">
+            <li>날짜</li>
+            <li>주문정보</li>
+            <li>상태</li>
+            <li>신청</li>
+        </ul>
+        <ul class="orderList">
+            <li class="stateList">
+                
+            </li>
+        </ul>
+    </div>
+    <!-- 주문을 정말 취소할 지 묻는 Modal 창 -->
+    <div id="modal" class="modal">
+      <div class="modal-background" id="modalBackground"></div>
+      <div class="modal-content">
+        <div class="box">
+          <p class="mb-3">
+            주문 취소 시 복구할 수 없습니다. 정말로 취소하시겠습니까?
+          </p>
+
+          <div class="buttons">
+            <button
+              class="button mt-5"
+              id="deleteCompleteButton"
+              aria-label="close"
+            >
+              네
+            </button>
+            <button
+              class="button is-primary mt-5"
+              id="deleteCancelButton"
+              aria-label="close"
+            >
+              아니오
+            </button>
+          </div>
         </div>
       </div>
-    </nav>
-    <div >
-      <ul class="categoryNav">
-        <li id="brand"><span>BRAND</span></li>
-        <li id="MEN"><span>MEN</span></li>
-        <li id="WOMEN"><span>WOMEN</span></li>
-        <li id="KIDS"><span>KIDS</span></li>
-      </ul>
-    </div>
-    <div>
-      <ul class="categoryList hidden">
-        
-      </ul>
-    </div>
-    <div class="container">
-      <ul class="productList">
-        <!-- <li>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-5">제품명</p>
-                  <p class="subtitle is-6">브랜드</p>
-                  <p class="subtitle is-6">가격</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li> -->
-      </ul>    
-    </div>
-    <ul class="pageFrame" id="js-pagination">
 
-    </ul>
-    <script src="home.js" type="module" defer></script>
-
+      <button
+        class="modal-close is-large"
+        id="modalCloseButton"
+        aria-label="close"
+      ></button>
+    </div>
+    <script src="user-order.js"></script>
 </body>
 </html>
