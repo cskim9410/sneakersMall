@@ -95,7 +95,7 @@ function renderProductCard(item) {
               <div class="media-content">
                 <p class="title is-6">${name}</p>
                 <p class="subtitle is-6">${brandName}</p>
-                <p class="subtitle is-6">${useful.addCommas(price)} 원</p>
+                <p class="subtitle is-5">${useful.addCommas(price)} 원</p>
               </div>
             </div>
           </div>
