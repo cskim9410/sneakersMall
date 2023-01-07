@@ -1,5 +1,8 @@
 # sneakersMall
 
+# 데모 링크
+http://ec2-43-200-172-180.ap-northeast-2.compute.amazonaws.com:3000/
+
 ### 여러 브랜드의 운동화를 모아놓은 쇼핑몰
 
 - 메인페이지에 최근 등록순 상품 노출
