@@ -13,6 +13,10 @@ http://ec2-43-200-172-180.ap-northeast-2.compute.amazonaws.com:3000/
 
 - HTML, CSS, JavaScript
 
+### 배포
+- AWS EC2
+- PM2
+
 ### 직접 구현한 기능
 - 메인페이지 상품정보 api 요청
 - 메인페이지 상품 검색, 필터 api 요청
